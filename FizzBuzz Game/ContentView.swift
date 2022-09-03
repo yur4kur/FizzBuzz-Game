@@ -52,7 +52,13 @@ struct ContentView: View {
     
     var body: some View {
         VStack{
-            
+            ZStack{
+                RoundedRectangle(cornerRadius: 40)
+                    .frame(width: 200, height: 200)
+                    .foregroundColor(.gray)
+                Text("\(checkedNumber)")
+                    .font(.system(size: 120, weight: .bold))
+            }
             
             Text("Score: \(score)")
             .font(.system(size: 60))
