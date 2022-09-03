@@ -10,8 +10,9 @@ import SwiftUI
 
 struct ContentView: View {
     @State var score = 0
-    @State var checkedNumber = 15
+    @State var checkedNumber = Int.random(in: 1...100)
     
+    //MARK: - View update and scoring methods
     func generateNumber() {
         checkedNumber = Int.random(in: 1...100)
     }
@@ -26,6 +27,7 @@ struct ContentView: View {
         generateNumber()
     }
     
+    //MARK: - Checking user answer methods
     func skipCheck() {
         if !checkedNumber.isMultiple(of: 3) && !checkedNumber.isMultiple(of: 5) {
             plusOne()
@@ -50,6 +52,7 @@ struct ContentView: View {
         }
     }
     
+    //MARK: - View Model
     var body: some View {
         VStack{
             ZStack{
