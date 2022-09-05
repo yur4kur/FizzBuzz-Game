@@ -50,7 +50,7 @@ struct ContentView: View {
         } else {
             minusOne()
         }
-    }
+    } 
     
     //MARK: - View Model
     var body: some View {
