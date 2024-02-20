@@ -3,8 +3,10 @@
 
 ## FizzBuzz-Game: my first pet project coded after completion of "Hacking with Swift" by Paul Hudson and SwiftPlayground courses.
 
-### Stack: SwiftUI, CoreGrafics, MVC.
+### Stack: SwiftUI, CoreGrafics.
 
 In-short: primitive math game for small kids to learn multiplication by 3 & 5.
 
 The project is fully coded in SwiftUI using system's CoreGrafics methods for basic animation.
+
+It's intentionally being kept in its original condition to remind me of the starting level.
